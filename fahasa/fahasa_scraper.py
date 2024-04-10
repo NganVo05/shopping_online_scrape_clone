@@ -51,7 +51,8 @@ def get_product_info(soup: BeautifulSoup) -> str:
                 if len(title) == 0:
                     title = f'"null"'
                 else:
-                    title = f'"{title[0].text}"'
+                    title = title[0].text.replace('"', '')
+                    title = f'"{title}"'
 
                 # 4 rating
                 rating = "null"
