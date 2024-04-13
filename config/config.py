@@ -42,6 +42,8 @@ class ShoppingOnlineLocation:
                 return base_url
             case "fahasa":
                 filter_keyword = filter_string(self.keyword, "+")
+                if(len(self.keyword2) == 0):
+                    return "https://www.fahasa.com/{0}/{1}.html?order=num_orders&limit=1000&p={4}".format(self.keyword,self.keyword1,self.keyword2, self.keyword3, self.page)
                 if(len(self.keyword3) == 0):
                     return "https://www.fahasa.com/{0}/{1}/{2}.html?order=num_orders&limit=1000&p={4}".format(self.keyword,self.keyword1,self.keyword2, self.keyword3, self.page)
                 base_url = "https://www.fahasa.com/{0}/{1}/{2}/{3}.html?order=num_orders&limit=1000&p={4}".format(self.keyword,self.keyword1,self.keyword2, self.keyword3, self.page)
