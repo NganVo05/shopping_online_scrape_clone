@@ -33,9 +33,9 @@ e6 = tk.Entry(root)
 # Set default values for entries
 e1.insert(0, "fahasa")
 e2.insert(0, "sach-trong-nuoc")
-e3.insert(0, "giao-khoa-tham-khao")
-e4.insert(0, "lop-2")
-e5.insert(0, "tham-khao-lop-12")
+e3.insert(0, "phong-thuy-kinh-dich")
+e4.insert(0, "")
+e5.insert(0, "")
 e6.insert(0, "1")
 
 e1.grid(row=0, column=1)
